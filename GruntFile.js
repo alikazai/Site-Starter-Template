@@ -11,7 +11,7 @@ module.exports = function(grunt){
                 reporter: require('jshint-stylish') 
             },
             // When this task is run, lint the Gruntfile and all js files in src
-            build: ['gruntfile.js', 'src/**/*.js']
+            build: ['gruntfile.js', 'src/***/*.js']
         },
         // Configure uglify to minify js files
         uglify: {
@@ -78,6 +78,7 @@ module.exports = function(grunt){
     
 
     // Register Task
+    grunt.registerTask('devcss', ['sass', 'watch']);
     grunt.registerTask('minify', ['sass', 'cssmin']);
     grunt.registerTask('devjs', ['jshint', 'uglify']);
     grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'cssmin']);    
