@@ -17,6 +17,6 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.0.2",
     "jshint-stylish": "^2.2.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   }
 }
